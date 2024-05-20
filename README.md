@@ -17,7 +17,7 @@ Clone the repository or download the code files.
 Install the required library: pip install pillow.
 
 To run the script:
-There are a few lines of usage examples at the end of the script, you can uncomment that and run the code.
+Use a file demo.py
 
 Notes:
 At the moment, the program does not handle cases where multiple colours have the same maximum frequency, it will return the one of the colours with maximum frequency.
