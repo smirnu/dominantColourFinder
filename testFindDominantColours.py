@@ -1,7 +1,7 @@
 import unittest
 import findDominantColours
 
-class TestMartianRobots(unittest.TestCase):
+class TestDominantColours(unittest.TestCase):
 
     # an input pucture is racoon.png, with dominant colour white (background)
     def test_findDominantColours_pic(self):
