@@ -15,11 +15,9 @@ def findDominantColours(filePath, returnTopN = None, ignoreColours = []):
     colourToFrequencyMap = fillColourToFrequencyMap(rgbImg, listToIgnoreReducedColours)
 
     if returnTopN == None:
-        print(findNDominant(colourToFrequencyMap)) # delete
         return findNDominant(colourToFrequencyMap)
     else:
         listOfNDominantColours = findNDominants(colourToFrequencyMap, returnTopN)
-        print(listOfNDominantColours) # delete
         return listOfNDominantColours
 
 # going through each pixel and collecting colours in the map and counting how many times we have met the colour
@@ -78,11 +76,3 @@ def buildMaxPriorityQueue(colourToFrequencyMap):
     tuplelist = list((-value, key) for key, value in colourToFrequencyMap.items())
     heapq.heapify(tuplelist)
     return tuplelist
-
-# To run the main process you can uncomment the code bellow
-# filePath = './samples/racoon.png' # pathToYourImg.canBeDifferentExtensions
-# ignoreColours = [(255, 255, 255)]  # white
-# dominantColour = findDominantColours(filePath, ignoreColours = ignoreColours)
-# top3Colours = findDominantColours(filePath, returnTopN = 3)
-# print('The most dominant colour is: ' + str(dominantColour))
-# print('The top 3 dominant colours are: ' + str(top3Colours))
