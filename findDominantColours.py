@@ -80,9 +80,9 @@ def buildMaxPriorityQueue(colourToFrequencyMap):
     return tuplelist
 
 # To run the main process you can uncomment the code bellow
-filePath = './samples/racoon.png' # pathToYourImg.canBeDifferentExtensions
-ignoreColours = [(255, 255, 255)]  # white
-dominantColour = findDominantColours(filePath, ignoreColours = ignoreColours)
-top3Colours = findDominantColours(filePath, returnTopN = 3)
-print('The most dominant colour is: ' + str(dominantColour))
-print('The top 3 dominant colours are: ' + str(top3Colours))
+# filePath = './samples/racoon.png' # pathToYourImg.canBeDifferentExtensions
+# ignoreColours = [(255, 255, 255)]  # white
+# dominantColour = findDominantColours(filePath, ignoreColours = ignoreColours)
+# top3Colours = findDominantColours(filePath, returnTopN = 3)
+# print('The most dominant colour is: ' + str(dominantColour))
+# print('The top 3 dominant colours are: ' + str(top3Colours))
